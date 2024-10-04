@@ -9,15 +9,12 @@ import org.spongepowered.asm.mixin.Shadow;
 @Mixin(WorldCreator.class)
 public abstract class WorldCreatorMixin {
 
-//    @Shadow public abstract WorldCreator.Mode getGameMode();
-//
-//    @WrapMethod(
-//            method = "isHardcore"
-//    )
-//    private boolean hardcoreGamemode(Operation<Boolean> original) {
-//
-//        if (getGameMode() == WorldCreator.Mode.valueOf("TRIALBYFIRE")){
-//            return true;
-//        } else return original.call();
-//    }
+    @Shadow public abstract WorldCreator.Mode getGameMode();
+
+    @WrapMethod(method = "isHardcore")
+    private boolean hardcoreGamemode(Operation<Boolean> original) {
+        if (getGameMode() == WorldCreator.Mode.valueOf("TRIALBYFIRE")){
+            return true;
+        } else return original.call();
+    }
 }

@@ -1,11 +1,14 @@
 {
-	"required": true,
-	"package": "net.superfastscyphozoa.trialbyfire.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-      "WorldCreatorMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	}
+  "required": true,
+  "package": "net.superfastscyphozoa.trialbyfire.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "WorldCreatorMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "CreateWorldScreenMixin"
+  ]
 }
