@@ -13,6 +13,9 @@
 	"entrypoints": {
 		"main": [
 			"net.superfastscyphozoa.trialbyfire.TrialByFire"
+		],
+		"mm:early_risers": [
+			"net.superfastscyphozoa.trialbyfire.TrialByFireEarlyRiser"
 		]
 	},
 	"mixins": [

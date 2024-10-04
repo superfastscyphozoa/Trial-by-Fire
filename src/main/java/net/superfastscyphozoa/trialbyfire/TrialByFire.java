@@ -11,7 +11,6 @@ public class TrialByFire implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
 		LOGGER.info("You have once again entered the world of survival horror. Good luck!");
 	}
 }
