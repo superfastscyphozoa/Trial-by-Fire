@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "trial-by-fire",
+	"version": "0.1",
+	"name": "Trial by Fire",
+	"description": "You have once again entered the world of survival horror. Good luck!",
+	"authors": [
+		"Chell"
+	],
+	"license": "MIT",
+	"icon": "assets/trial-by-fire/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.superfastscyphozoa.trialbyfire.TrialByFire"
+		]
+	},
+	"mixins": [
+		"trial-by-fire.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
