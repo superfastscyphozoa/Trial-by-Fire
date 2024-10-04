@@ -26,7 +26,7 @@ public class TrialByFireEarlyRiser implements Runnable{
 
         /*
           notice how the references looks like this: "net.minecraft.class_1934" rather than this: "net.minecraft.world.GameMode"?
-          that's because they're intermediary, get the intermediary reference of a class by checking the class on the fabric docs
+          that's because they're intermediary, get the intermediary reference of a class or method by checking it on the fabric docs
         */
 
         ClassTinkerers
